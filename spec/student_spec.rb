@@ -141,6 +141,7 @@ describe Student do
       avi.update
 
       avi_from_db = Student.find_by_name("Avi")
+      # binding.pry
       expect(avi_from_db).to be_nil
 
       bob_from_db = Student.find_by_name("Bob")
